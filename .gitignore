@@ -1,5 +1,7 @@
 Logs
 BackupLogsScraper
 node_modules
+results/
+Test_Results
 .idea
 .vs
