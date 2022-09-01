@@ -1,0 +1,9 @@
+{
+  "resultDir": "results/jest-stare/",
+  "reportTitle": "jest-stare!",
+  "additionalResultsProcessors": [],
+  "coverageLink": "./coverage/lcov-report/index.html",
+  "jestStareConfigJson": "jest-stare.json",
+  "resultHtml": "index.html",
+  "resultJson": "jest-results.json"
+}

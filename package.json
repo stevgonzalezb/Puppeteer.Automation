@@ -1,0 +1,52 @@
+{
+    "name": "poc-automated-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "jest",
+        "debug": "nodemon --inspect jest"
+    },
+    "jest": {
+        "collectCoverage": false,
+        "coverageReporters": [
+            "lcov"
+        ],
+        "coverageDirectory": "./output/code-coverage/",
+        "reporters": [
+            "default",
+            [
+                "jest-stare",
+                {
+                    "resultDir": "results/jest-stare",
+                    "reportTitle": "jest-stare!",
+                    "additionalResultsProcessors": [
+                        "jest-junit"
+                    ],
+                    "coverageLink": "./coverage/lcov-report/index.html",
+                    "jestStareConfigJson": "jest-stare.json"
+                }
+            ]
+        ]
+    },
+    "author": "Emerson",
+    "license": "ISC",
+    "keywords": [
+        ""
+    ],
+    "dependencies": {
+        "ajv": "~6.12.5",
+        "fs-extra": "~9.0.1",
+        "jest": "^27.0.6",
+        "jest-html-reporter": "^3.4.1",
+        "jest-stare": "^2.2.2",
+        "lodash": "^4.17.21",
+        "minimist": "~1.2.5",
+        "moment": "~2.29.0",
+        "puppeteer": "^10.2.0",
+        "uuid": "~3.1.0",
+        "winston": "~2.4.0",
+        "winston-daily-rotate-file": "~3.1.4"
+    }
+}
